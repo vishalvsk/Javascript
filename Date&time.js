@@ -5,10 +5,10 @@
 //  platform-independant format. Date objects contain a number that
 //  represents milliseconds since 1-january, 1970. UTC.
 
-//  4 ways to create a new date object
+// // //  4 ways to create a new date object
 
-// new Date()
-// new Date(year, month, day, hour, minute, second, milliseconds);
+// // new Date()
+// // new Date(year, month, day, hour, minute, second, milliseconds);
 
 // let currDate = new Date();
 // console.log(currDate);
@@ -35,9 +35,9 @@
 // console.log(d.toLocaleString());
 
 
-//    -- Dates method
+// //    -- Dates method
 
-//    how to get individual dates
+// // //    how to get individual dates
 
 // const currDate = new Date();
 
