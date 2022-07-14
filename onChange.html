@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>onChage form </title>
+    <style>
+        body{
+            background-color: cadetblue;
+        }
+        form{
+            align-items: center;
+            margin-left: 100px;
+            margin-top: 100px;
+
+        }
+        #submit:hover{
+            cursor: pointer;
+        }
+        #submit{
+             margin-top: 50px;
+             align-items: center;
+             background-color: aqua;
+        }
+
+    </style>
+</head>
+<body>
+<form action="/action_page.php">
+    <label for="" >Your Name</label>
+    <input list="browsers" id="name" >
+    <br>
+    <label for="">choose a browser</label>
+        <select name="browser" id="browser"> 
+        <option value="Internet Explorer">Select Options</option>
+        <option value="Firefox">Firefox</option>
+        <option value="Chrome">chrome</option>
+        <option value="Opera">opera</option>
+        <option value="Safari">safari</option>
+    </select>
+    <br>
+    <br>
+    <br>
+    <div id="result" >
+
+    </div>
+    
+</form>
+        <div class="form-example">
+            <input id="submit" type="submit" value="Subscribe!">
+        </div>
+    </form>
+</body>
+</html>
+<script>
+    //   const selectElement = () => {
+    //       const inputChange = document.querySelector("#name").value;
+    //       const selectionChange = document.querySelector("#browser").value;
+        
+    //     //    show it in a web page 
+    //     const result = document.getElementById("result").innerHTML = `Mr. ${inputChange} has selected browser of ${selectionChange}`;
+
+    //       console.log(`Mr. ${inputChange} has selected browser of ${selectionChange}`);
+    //   }
+    
+
+    //  get element from html by using event method 
+    const browser = document.querySelector("#browser");
+     browser.addEventListener("change" , () => {
+          const inputChange = document.querySelector("#name").value;
+          const selectionChange = document.querySelector("#browser").value;
+        
+        //    show it in a web page 
+        const result = document.getElementById("result").innerHTML = `Mr. ${inputChange} has selected browser of ${selectionChange}`;
+
+          console.log(`Mr. ${inputChange} has selected browser of ${selectionChange}`);
+    });
+
+    
+
+
+
+
+
+</script>

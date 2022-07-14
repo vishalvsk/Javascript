@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KeyBoard Events</title>
+    <style>
+        input:hover{
+            cursor: pointer;
+        }
+        input{
+            background-color: azure;
+            display: flex;
+            margin: auto;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="main-div" >
+        <div>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Excepturi nulla ab pariatur deleniti delectus. Deleniti.</p>
+            <br>
+            <input type="text" class="effect-1" onkeypress="keyPress()" onkeydown="keyDown()" onkeyup="KeyUp()" > 
+            <p id="keys" ></p>
+        </div>
+    </div>
+</body>
+</html>
+
+<script>
+      const keyPress = () => {
+         document.getElementById("keys").innerHTML = `you press ${event.key} and it's code is ${event.code}`;
+         console.log(document.getElementById("keys").innerHTML = `you press ${event.key} and it's code is ${event.code}`);
+
+      }
+
+    const keyDown = () => {
+        document.getElementById("keys").innerHTML = "key is Down";
+
+    }
+
+    const KeyUp = () => {
+            document.getElementById("keys").innerHTML = "key is Up";
+
+        }
+
+
+
+
+
+
+
+</script>

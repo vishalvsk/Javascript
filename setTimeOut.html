@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>setTimeOut</title>
+    <style>
+        body{
+            background-color: aqua;
+        }
+        #btn,#btn2 {
+                cursor: pointer;
+                background-color: #4CAF50; /* Green */
+                border: none;
+                color: white;
+                padding: 15px 32px;
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;
+                font-size: 16px;
+        }
+        p{
+            align-items: center;
+        }
+        #btn2{
+            cursor: pointer;
+            margin-left: 20px;
+        }
+
+
+
+
+    </style>
+</head>
+<body>
+    <p id="ptag" > <b> Can you stop me when i am reach out at 5  🙋‍♂️❓</b></p>
+    <br>
+    <!-- <p id="showTopNum" ></p> -->
+    <br>
+    <button id="btn" >Start Coundown</button>
+    
+    <button id="btn2" >Stop Count down</button>
+
+<script>
+        const myName = document.querySelector("#ptag");
+        const btn = document.querySelector("#btn");
+        const btn2 = document.querySelector("#btn2");
+        
+        let num = 0;
+        let timeRef;
+        btn.addEventListener("click", showNum);
+        
+        function showNum() {
+            myName.innerHTML = "loading ...... 😕 ";
+            timeRef = setInterval(() => {
+               myName.innerHTML = `count down start - ${num}`;
+               num++;
+               console.log(num);
+            },1000);
+
+            btn2.addEventListener("click", () => {
+                clearInterval(timeRef);
+            });
+
+        }
+
+
+
+
+
+
+
+
+</script>
+</body>
+</html>
+
