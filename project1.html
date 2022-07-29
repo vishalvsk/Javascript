@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>project1</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            background-color: aqua;
+        }
+        #container{
+             align-items: center;
+             justify-content: center;
+        }
+        button{
+            cursor: pointer;
+            color: white;
+            background-color: brown;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+      <div class="container">
+            <h1>Can you turn the light on 💡 </h1>
+            <button  onclick="document.getElementById('myImg').src='images/lightOn.jpg' ">Turn On the ligh</button>
+            <img src="images/lightOff.jpg" alt="firstImg" id="myImg">
+
+            <button onclick="document.getElementById('myImg').src='images/lightOff.jpg' ">Turn Off the ligh</button>
+      </div>
+</body>
+</html>

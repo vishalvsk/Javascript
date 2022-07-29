@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>event</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+
+        body{
+            background-color: aqua;
+        }
+        #parent{
+            width: 300px;
+            height: 150px;
+            border: solid;
+            background-color: blueviolet;
+        }
+        #child{
+            width: 300px;
+            height: 150px;
+            border: solid;
+            margin-top: 20px;
+            background-color: blue;
+
+        }
+    </style>
+</head>
+<body>
+       <div id="parent">
+           
+       </div>
+       <div id="child">
+
+       </div>
+</body>
+</html>
+
+<script>
+       const parent = document.getElementById("parent");
+       const child = document.getElementById("child");
+        
+       const parentCall = () => {
+        alert("parent call");
+       }
+       const childCall = () => {
+            alert("child call");
+        }
+
+     
+
+
+
+       parent.addEventListener("click",parentCall,true);
+       
+        child.addEventListener("click", childCall,true);
+
+</script>

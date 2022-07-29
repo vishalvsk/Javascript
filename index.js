@@ -58,6 +58,8 @@
 
 // triple equal to checks the data types also
 
+//  -- Ajax requests
+//  - the full form of ajax is Asynchronous jaavscript and xml.
 
 
 
